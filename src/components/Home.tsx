@@ -10,8 +10,8 @@ const Home = () => {
       <Box p="8" maxW="590">
         <Flex>
           <Heading>Hello Olamilekan</Heading>
-          <Notify />
-          {/* <Image src={Notify} alt="notify pic" /> */}
+          {/* <Notify /> */}
+          <Image uri="../../assets/notify.png" alt="notify pic" />
         </Flex>
 
         <Box mt="8">
