@@ -1,18 +1,19 @@
 import React from "react";
-import { Box, Heading, Text, Flex, Image, HStack } from "native-base";
+import { Box, Heading, Text, HStack } from "native-base";
 import Layout from "./common/Layout";
-import { Notify } from "./icon/svg";
-// import Notify from "../../assets/notify.svg"
+import { Image } from "react-native";
+// import { Notify } from "./icon/svg";
+import Notify from "../../assets/notify.png";
 
 const Home = () => {
   return (
     <Layout>
       <Box p="8" maxW="590">
-        <Flex>
+        <HStack justifyContent="space-between">
           <Heading>Hello Olamilekan</Heading>
-          {/* <Notify /> */}
-          <Image uri="../../assets/notify.png" alt="notify pic" />
-        </Flex>
+        
+          <Image source={Notify} />
+        </HStack>
 
         <Box mt="8">
           <Heading fontSize="20" mb="2">
